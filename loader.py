@@ -6,7 +6,6 @@ import keyboard
 import psutil
 import threading
 import time
-print("hi")
 class LagSwitchApp:
     def __init__(self):
         self.settings = {"Keybind": "`", "Lagswitch": "off", "AutoTurnOff": True, "AutoTurnBackOn": False}
