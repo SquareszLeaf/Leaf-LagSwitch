@@ -27,7 +27,7 @@ class LagSwitchApp:
         ctk.set_default_color_theme("blue")
 
         self.root = ctk.CTk()
-        self.root.title("Leaf Lag V2.2.6")
+        self.root.title("Leaf Lag V2.2.7")
         self.root.geometry("370x185")
         self.root.resizable(False, False)
         self.root.attributes("-topmost", True)
@@ -40,7 +40,7 @@ class LagSwitchApp:
         self.status_label = ctk.CTkLabel(self.root, text="LagSwitch off.", text_color="red", font=("TkDefaultFont", 15, "bold"))
         self.status_label.grid(row=0, column=0, padx=10, pady=0)
         
-        ctk.CTkLabel(self.root, text="Leaf Lag V2.2.6").grid(row=0, column=1, padx=0, pady=0)
+        ctk.CTkLabel(self.root, text="Leaf Lag V2.2.7").grid(row=0, column=1, padx=0, pady=0)
         
         self.keybind_label = ctk.CTkLabel(self.root, text=f"Keybind: {self.settings['Keybind']}")
         self.keybind_label.grid(row=1, column=0, padx=10, pady=0)
