@@ -1,4 +1,4 @@
-# LeafLagV2.2.7
+# LeafLagV2.2.8
 import subprocess
 import ctypes
 import atexit
@@ -13,8 +13,9 @@ class LagSwitchApp:
         self.settings = {
             "Keybind": "`", 
             "Lagswitch": "off", 
-            "AutoTurnOff": True, 
-            "AutoTurnBackOn": False
+            "AutoTurnOff": False, 
+            "AutoTurnBackOn": False,
+            "Overlay": False
         }
         self.block_flag = False
         self.manual_override = False
@@ -22,12 +23,13 @@ class LagSwitchApp:
         self.timer1_duration = 0.2
         self.closed = False
         self.active_timer = None
+        self.status_window = None
 
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
 
         self.root = ctk.CTk()
-        self.root.title("Leaf Lag V2.2.7")
+        self.root.title("Leaf Lag V2.2.8")
         self.root.geometry("370x185")
         self.root.resizable(False, False)
         self.root.attributes("-topmost", True)
@@ -40,14 +42,14 @@ class LagSwitchApp:
         self.status_label = ctk.CTkLabel(self.root, text="LagSwitch off.", text_color="red", font=("TkDefaultFont", 15, "bold"))
         self.status_label.grid(row=0, column=0, padx=10, pady=0)
         
-        ctk.CTkLabel(self.root, text="Leaf Lag V2.2.7").grid(row=0, column=1, padx=0, pady=0)
+        ctk.CTkLabel(self.root, text="Made By Squaresz").grid(row=0, column=1, padx=0, pady=0)
         
         self.keybind_label = ctk.CTkLabel(self.root, text=f"Keybind: {self.settings['Keybind']}")
         self.keybind_label.grid(row=1, column=0, padx=10, pady=0)
         
         ctk.CTkButton(self.root, text="Change Keybind", command=self.change_keybind).grid(row=2, column=0, padx=10, pady=5)
 
-        self.auto_turnoff_var = ctk.BooleanVar(value=True)
+        self.auto_turnoff_var = ctk.BooleanVar(value=False)
         ctk.CTkCheckBox(self.root, text="Anti-Timeout", variable=self.auto_turnoff_var, command=self.update_auto_turnoff).grid(row=3, column=0, padx=10, pady=5)
 
         self.auto_turnbackon_var = ctk.BooleanVar(value=False)
@@ -70,7 +72,29 @@ class LagSwitchApp:
         self.timer1_label = ctk.CTkLabel(self.root, text=f"{self.timer1_duration:.1f}s")
         self.timer1_label.grid(row=4, column=1, padx=0, pady=5)
 
-        ctk.CTkLabel(self.root, text="Made by Squaresz").grid(row=1, column=1, padx=0, pady=5)
+        self.overlay_var = ctk.BooleanVar(value=False)
+        ctk.CTkCheckBox(self.root, text="Overlay", variable=self.overlay_var, command=self.toggle_status_window).grid(row=1, column=1, padx=10, pady=5)
+
+    def toggle_status_window(self):
+        if self.overlay_var.get():
+            self.open_status_window()
+        else:
+            self.close_status_window()
+
+    def open_status_window(self):
+        self.status_window = ctk.CTkToplevel(self.root)
+        self.status_window.attributes("-topmost", True)
+        self.status_window.attributes("-fullscreen", True)
+        self.status_window.attributes("-transparentcolor", self.status_window['bg'])
+        
+        self.status_window_label = ctk.CTkLabel(self.status_window, text="LagSwitch off.", text_color="red", font=("TkDefaultFont", 15, "bold"))
+        self.status_window_label.place(relx=0.5, rely=0.5, anchor="center", y=80)
+        
+        self.update_status_window()
+
+    def close_status_window(self):
+        if self.status_window is not None and self.status_window.winfo_exists():
+            self.status_window.destroy()
 
     def update_auto_turnoff(self):
         self.settings["AutoTurnOff"] = self.auto_turnoff_var.get()
@@ -166,6 +190,13 @@ class LagSwitchApp:
         status_text = "LagSwitch on." if self.block_flag else "LagSwitch off."
         color = "green" if self.block_flag else "red"
         self.status_label.configure(text=status_text, text_color=color)
+        if hasattr(self, 'status_window_label'):
+            self.update_status_window()
+
+    def update_status_window(self):
+        status_text = "LagSwitch on." if self.block_flag else "LagSwitch off."
+        color = "green" if self.block_flag else "red"
+        self.status_window_label.configure(text=status_text, text_color=color)
 
     def update_firewall_rules(self, action):
         if self.closed:
