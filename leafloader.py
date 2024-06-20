@@ -1,4 +1,4 @@
-# LeafLoaderV1.0.5
+# LeafLoaderV1.0.4
 import os
 import sys
 import requests
@@ -8,7 +8,7 @@ import customtkinter as ctk
 from tkinter import messagebox
 import re
 
-
+print("helloworld")
 class ScriptUpdater:
     def __init__(self, script_url, save_directory):
         self.script_url = script_url
