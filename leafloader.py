@@ -1,4 +1,4 @@
-# LeafLoaderV1.0.4
+# LeafLoaderV1.0.4 bugfix
 import os
 import sys
 import requests
@@ -219,9 +219,9 @@ def main():
     script_url = "https://raw.githubusercontent.com/LEAVEMEALONEHITHUB/NRQWO43XNF2GG2DMN5QWIZLS/main/leaflag.py"
 
     if getattr(sys, 'frozen', False):
-        save_directory = os.path.join(os.path.dirname(sys.executable), "Leaf_Loader")
+        save_directory = os.path.join(os.path.dirname(sys.executable), "Leaf_Lag")
     else:
-        save_directory = os.path.join(os.path.dirname(os.path.realpath(__file__)), "Leaf_Loader")
+        save_directory = os.path.join(os.path.dirname(os.path.realpath(__file__)), "Leaf_Lag")
 
     updater = ScriptUpdater(script_url, save_directory)
     updater.run()
