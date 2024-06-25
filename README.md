@@ -8,4 +8,4 @@ Open Source
 
 (Note, be carful using this in games, a lot of games will automatically kick or close the game which could result in a ban)
 #
-### Post Bugs or Suggestions [Here]((https://discord.com/invite/xhfW2c7Q9H))
+### Post Bugs or Suggestions [Here](https://discord.com/invite/xhfW2c7Q9H)
