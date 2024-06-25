@@ -57,7 +57,7 @@ class ScriptUpdater:
         self.selected_version = ctk.StringVar()
 
     def join_discord(self):
-        file_url = "https://raw.githubusercontent.com/LEAVEMEALONEHITHUB/NRQWO43XNF2GG2DMN5QWIZLS/main/discord.txt"
+        file_url = "https://raw.githubusercontent.com/SquareszLeaf/Leaf-LagSwitch/main/discord.txt"
         
         try:
             response = requests.get(file_url)
@@ -238,7 +238,7 @@ class ScriptUpdater:
 
 def main():
 
-    script_url = "https://raw.githubusercontent.com/LEAVEMEALONEHITHUB/NRQWO43XNF2GG2DMN5QWIZLS/main/leaflag.py"
+    script_url = "https://raw.githubusercontent.com/SquareszLeaf/Leaf-LagSwitch/main/leaflag.py"
 
     if getattr(sys, 'frozen', False):
         save_directory = os.path.join(os.path.dirname(sys.executable), "Leaf_Lag")
