@@ -1,4 +1,4 @@
-# LeafLagV2.2.8
+# LeafLagV2.2.9
 import subprocess
 import ctypes
 import atexit
@@ -24,12 +24,13 @@ class LagSwitchApp:
         self.closed = False
         self.active_timer = None
         self.status_window = None
+        self.in_reactivation_period = False  # New flag to track reactivation period
 
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
 
         self.root = ctk.CTk()
-        self.root.title("Leaf Lag V2.2.8")
+        self.root.title("Leaf Lag V2.2.9")
         self.root.geometry("370x185")
         self.root.resizable(False, False)
         self.root.attributes("-topmost", True)
@@ -146,6 +147,13 @@ class LagSwitchApp:
 
     def toggle_block(self, event):
         if event.name == self.settings["Keybind"]:
+            if self.in_reactivation_period:
+                if self.active_timer:
+                    self.active_timer.cancel()
+                self.manual_override = True
+                self.in_reactivation_period = False  # Ensure the flag is reset
+                self.turn_off_lag_switch()
+                return  # Stop further processing
             if self.block_flag:
                 self.manual_override = True
                 self.turn_off_lag_switch()
@@ -167,11 +175,14 @@ class LagSwitchApp:
             return
         self.turn_off_lag_switch()
         if self.settings["AutoTurnBackOn"]:
+            self.in_reactivation_period = True  # Set the flag
             time.sleep(self.timer1_duration)
-            self.turn_on_lag_switch()
-            if self.settings["AutoTurnOff"]:
-                self.active_timer = threading.Timer(self.timer_duration, self.toggle_lag_switch)
-                self.active_timer.start()
+            self.in_reactivation_period = False  # Reset the flag
+            if not self.manual_override:  # Check if manual override occurred
+                self.turn_on_lag_switch()
+                if self.settings["AutoTurnOff"]:
+                    self.active_timer = threading.Timer(self.timer_duration, self.toggle_lag_switch)
+                    self.active_timer.start()
 
     def turn_off_lag_switch(self):
         self.block_flag = False
