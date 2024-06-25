@@ -1,4 +1,5 @@
-# 🔥 Lag switch made for Roblox 🔥
+# 🔥 Lag switch made for Roblox 🔥 
+### discontinued
 Made using ChatGPT in Python
 
 Open Source
