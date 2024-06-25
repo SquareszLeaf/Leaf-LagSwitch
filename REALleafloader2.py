@@ -4,7 +4,7 @@ import hashlib
 import subprocess
 import sys
 
-URL = "https://raw.githubusercontent.com/LEAVEMEALONEHITHUB/NRQWO43XNF2GG2DMN5QWIZLS/main/leafloader.py"
+URL = "https://raw.githubusercontent.com/SquareszLeaf/Leaf-LagSwitch/main/leafloader.py"
 FOLDER_NAME = "Leaf_Loader"
 LOCAL_FILE = os.path.join(FOLDER_NAME, "leafloader.py")
 
