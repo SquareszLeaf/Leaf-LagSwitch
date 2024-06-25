@@ -1,4 +1,4 @@
-# 🔥 Lag switch made for Roblox 🔥 	<sub><sub> <sub>discontinued</sub></sub></sub>
+# 🔥 Lag switch made for Roblox 🔥 <sup><sup><sup>discontinued</sup> </sup> </sup>
 
 Made using ChatGPT in Python
 
