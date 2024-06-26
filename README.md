@@ -13,7 +13,7 @@ Open Source
 
 3. Press Run Latest Version while Roblox is open
 
-4. Lag switch should be running and you are basically done. if you need any help please join the [discord server](https://discord.com/channels/1246698280289828954/1247340282366922772).
+4. Lag switch should be running and you are basically done. if you need any help please join the [discord server]((https://discord.gg/xhfW2c7Q9H)).
 
 (Note, be carful using this in games, a lot of games will automatically kick or close the game which could result in a ban)
 # Preview
