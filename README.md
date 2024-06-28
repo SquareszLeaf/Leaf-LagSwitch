@@ -23,3 +23,5 @@ this script requires python installed if you do not have python installed use th
 ![image](https://github.com/LEAVEMEALONEHITHUB/NRQWO43XNF2GG2DMN5QWIZLS/assets/171099505/ee7fcfd4-dea0-4ff9-8b81-b0921c329182)
 #
 ### Post Bugs or Suggestions [Here](https://discord.com/invite/xhfW2c7Q9H)
+
+if you are scared because it say its a virus idk why it does that it has something to do with pyinstaller (what turns the script into an exe) if you wanna learn more visit this [explanation.](https://stackoverflow.com/questions/43777106/program-made-with-pyinstaller-now-seen-as-a-trojan-horse-by-avg)
