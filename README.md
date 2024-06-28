@@ -5,6 +5,8 @@ Undetectable by Byfron (as of 6/25/2024)
 Made using ChatGPT in Python
 
 Open Source
+# pls read
+this script requires python installed if you do not have python installed use this version isntead: 
 ### How to Use:
 
 1. Download the loader [here.](https://github.com/SquareszLeaf/Leaf-LagSwitch/releases/tag/Leaf-Loader)
