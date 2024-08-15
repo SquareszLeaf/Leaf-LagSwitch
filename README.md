@@ -1,6 +1,6 @@
 # 🔥 Lag switch made for Roblox 🔥 <sup><sup><sup>on hiatus</sup> </sup> </sup>
 
-Undetectable by Byfron (as of 6/25/2024)
+Undetectable by Byfron (as of 8/14/2024)
 
 Made using ChatGPT in Python
 
