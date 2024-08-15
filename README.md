@@ -5,8 +5,8 @@ Undetectable by Byfron (as of 6/25/2024)
 Made using ChatGPT in Python
 
 Open Source
-# pls read
-### How to Use:
+
+## How to Use:
 
 1. Download the lag switch [here.](https://github.com/SquareszLeaf/Leaf-LagSwitch/releases)
 
