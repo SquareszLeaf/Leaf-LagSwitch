@@ -16,7 +16,7 @@ Stream Proof
 
 3. Lag switch should be running and you are basically done.
 
-(Note, be carful using this in games, a lot of games will automatically kick or close the game which could result in a ban)
+(Note, be careful using this in games, some games will automatically kick or close the game which could result in a ban)
 # Preview
 Video Preview https://streamable.com/ucklgz
 
