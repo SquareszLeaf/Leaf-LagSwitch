@@ -6,6 +6,8 @@ Made using ChatGPT in Python
 
 Open Source
 
+Stream Proof
+
 ## How to Use:
 
 1. Download the lag switch [here.](https://github.com/SquareszLeaf/Leaf-LagSwitch/releases)
