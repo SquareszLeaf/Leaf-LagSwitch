@@ -1,4 +1,4 @@
-# LeafLagV2.2.9
+# LeafLagV2.3.0
 import subprocess
 import ctypes
 import atexit
@@ -24,7 +24,7 @@ class LagSwitchApp:
         self.closed = False
         self.active_timer = None
         self.status_window = None
-        self.in_reactivation_period = False  # New flag to track reactivation period
+        self.in_reactivation_period = False
 
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
@@ -151,9 +151,9 @@ class LagSwitchApp:
                 if self.active_timer:
                     self.active_timer.cancel()
                 self.manual_override = True
-                self.in_reactivation_period = False  # Ensure the flag is reset
+                self.in_reactivation_period = False
                 self.turn_off_lag_switch()
-                return  # Stop further processing
+                return
             if self.block_flag:
                 self.manual_override = True
                 self.turn_off_lag_switch()
@@ -175,10 +175,10 @@ class LagSwitchApp:
             return
         self.turn_off_lag_switch()
         if self.settings["AutoTurnBackOn"]:
-            self.in_reactivation_period = True  # Set the flag
+            self.in_reactivation_period = True
             time.sleep(self.timer1_duration)
-            self.in_reactivation_period = False  # Reset the flag
-            if not self.manual_override:  # Check if manual override occurred
+            self.in_reactivation_period = False 
+            if not self.manual_override: 
                 self.turn_on_lag_switch()
                 if self.settings["AutoTurnOff"]:
                     self.active_timer = threading.Timer(self.timer_duration, self.toggle_lag_switch)
