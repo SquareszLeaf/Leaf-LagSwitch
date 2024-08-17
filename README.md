@@ -1,25 +1,23 @@
-# 🔥 Lag switch made for Roblox 🔥 <sup><sup><sup>on hiatus</sup> </sup> </sup>
+# 🔥 Lag Switch for Roblox 🔥
 
-Undetectable by Byfron (as of 8/14/2024)
+**Undetectable by Byfron** (as of 8/16/2024)  
 
-Made using ChatGPT in Python
+## 🚀 Features:
+- **Undetectable**: Leaf Lag is undetectable by Byfron. Staff can still ban you though if they think you are suspicious.
+- **Anti Timeout**: Leaf Lag has a built-in anti-time-out feature, ensuring that Roblox won’t disconnect you.
+- **Stream Proof**: Leaf Lag is external, meaning you can safely screen share without the lagswitch overlay being displayed.
 
-Open Source
+## 📖 How to Use:
+1. **[Download the lag switch here.](https://github.com/SquareszLeaf/Leaf-LagSwitch/releases)**
+2. Open the lagswitch with Roblox running.
+3. Done! The lag switch should now be operational.
 
-Stream Proof
+⚠️ **Warning**: Use with caution. Some games might auto-kick or close, potentially leading to a ban.
 
-## How to Use:
+## 🎥 Video Preview:
+Click the image below to watch the preview.
 
-1. Download the lag switch [here.](https://github.com/SquareszLeaf/Leaf-LagSwitch/releases)
+[![Video Preview](https://github.com/LEAVEMEALONEHITHUB/NRQWO43XNF2GG2DMN5QWIZLS/assets/171099505/ee7fcfd4-dea0-4ff9-8b81-b0921c329182)](https://streamable.com/ucklgz)
 
-2. Open the lagswitch with Roblox open.
-
-3. Lag switch should be running and you are basically done.
-
-(Note, be careful using this in games, some games will automatically kick or close the game which could result in a ban)
-# Preview
-Video Preview https://streamable.com/ucklgz
-
-![image](https://github.com/LEAVEMEALONEHITHUB/NRQWO43XNF2GG2DMN5QWIZLS/assets/171099505/ee7fcfd4-dea0-4ff9-8b81-b0921c329182)
-#
-### Post Bugs or Suggestions [Here](https://github.com/SquareszLeaf/Leaf-LagSwitch/issues)
+### 🛠️ Report Bugs or Suggest Features:
+[Post them here.](https://github.com/SquareszLeaf/Leaf-LagSwitch/issues)
