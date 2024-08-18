@@ -1,1 +1,1 @@
-https://github.com/SquareszLeaf/Leaf-LagSwitch
+https://raw.githubusercontent.com/SquareszLeaf/Leaf-LagSwitch/main/other/nodiscord
