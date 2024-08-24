@@ -6,7 +6,7 @@ Made using ChatGPT in Python
 
 Open Source
 
-Quiality not guaranteed
+Quiality not Guaranteed
 
 ## How to Use:
 
