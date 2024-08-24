@@ -6,7 +6,7 @@ Made using ChatGPT in Python
 
 Open Source
 
-Stream Proof
+Quiality not guarenteed
 
 ## How to Use:
 
