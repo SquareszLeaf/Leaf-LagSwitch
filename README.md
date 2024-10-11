@@ -1,12 +1,12 @@
 # 🔥 Lag switch made for Roblox 🔥
 
-Undetectable by Byfron (as of 8/14/2024)
+Undetectable by Byfron (as of 10/11/2024)
 
 Made using ChatGPT in Python
 
 Open Source
 
-Quiality not Guaranteed
+Quality not Guaranteed
 
 ## How to Use:
 
