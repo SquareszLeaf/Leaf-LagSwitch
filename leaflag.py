@@ -1,4 +1,5 @@
 # LeafLagV2.3.1
+# this code was optimised using minifier
 import subprocess,ctypes,atexit,keyboard,psutil,threading,time,customtkinter as ctk,sys
 _T='name'
 _S='LagSwitch on.'
