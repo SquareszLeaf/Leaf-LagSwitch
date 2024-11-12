@@ -1,6 +1,8 @@
 # 🔥 Lag switch made for Roblox 🔥
 
-Undetectable by Byfron (as of 10/11/2024)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/squareszleaf/leaf-lagswitch/total?style=for-the-badge&color=blue)
+
+Undetectable by Byfron (as of 11/11/2024)
 
 Made using ChatGPT in Python
 
@@ -18,6 +20,13 @@ Quality not Guaranteed
 
 (Note, be careful using this in games, some games will automatically kick or close the game which could result in a ban)
 # Preview
-[![](https://github.com/SquareszLeaf/Leaf-LagSwitch/blob/main/other/Untitled.jpg)](https://www.youtube.com/watch?v=ZNzOxamk4rA)
-#
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=ZNzOxamk4rA">
+    <img src="https://i.ibb.co/8szrZ7n/image-2024-11-11-180318510.png" alt="Preview Image" width="600">
+  </a>
+</p>
+
+---
+
 ### Post Bugs or Suggestions [Here](https://github.com/SquareszLeaf/Leaf-LagSwitch/issues)
