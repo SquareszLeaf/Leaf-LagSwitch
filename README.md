@@ -2,7 +2,7 @@
 
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/squareszleaf/leaf-lagswitch/total?style=for-the-badge&color=blue)
 
-Undetectable by Byfron (as of 11/11/2024)
+Undetectable by Byfron (as of Febuary 1st 2025)
 
 Made using ChatGPT in Python
 
@@ -18,7 +18,7 @@ Quality not Guaranteed
 
 3. Lag switch should be running and you are basically done.
 
-(Note, be careful using this in games, some games will automatically kick or close the game which could result in a ban)
+(Note, this is a bannable offense in most games. Use wisely and avoid using on accounts you care about. This won’t get you banned from Roblox itself, but it may result in a ban from certian games.)
 # Preview
 
 <p align="center">
