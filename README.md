@@ -22,7 +22,7 @@ Quality not Guaranteed
 # Preview
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=ZNzOxamk4rA">
+  <a href="https://youtu.be/6vhAvXsuKJU">
     <img src="https://i.ibb.co/8szrZ7n/image-2024-11-11-180318510.png" alt="Preview Image" width="600">
   </a>
 </p>
