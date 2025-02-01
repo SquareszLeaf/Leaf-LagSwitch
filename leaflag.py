@@ -241,7 +241,7 @@ class LeafLag:
                 if self.settings['AutoTurnBackOn']:
                     self.turn_on_lag_switch()
                 else:
-                    self.lagswitch_active = false
+                    self.lagswitch_active = False
                     self.update_status_label()
                     break
 
