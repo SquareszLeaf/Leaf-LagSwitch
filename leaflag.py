@@ -238,7 +238,10 @@ class LeafLag:
             if self.lagswitch_cycle_event.wait(self.reactivation_duration):
                 break
             if self.lagswitch_active:
-                self.turn_on_lag_switch()
+                if self.settings['AutoTurnBackOn']:
+                    self.turn_on_lag_switch()
+                else:
+                    break
 
     def turn_on_lag_switch(self) -> None:
         self.block_flag = True
