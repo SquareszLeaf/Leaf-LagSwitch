@@ -276,8 +276,12 @@ class LeafLag:
                 return
             exe_path = roblox_process.exe()
             if action == 'block':
-                cmd = ['netsh', 'advfirewall', 'firewall', 'add', 'rule',
-                       f'name={RULE_NAME}', 'dir=out', 'action=block', f'program={exe_path}']
+                quoted_path = f'"{exe_path}"'
+                cmd = [
+                    'netsh', 'advfirewall', 'firewall', 'add', 'rule',
+                    f'name={RULE_NAME}', 'dir=out', 'action=block',
+                    f'program={quoted_path}'
+                ]
             else:
                 cmd = ['netsh', 'advfirewall', 'firewall', 'delete', 'rule', f'name={RULE_NAME}']
             sp.run(cmd, creationflags=sp.CREATE_NO_WINDOW)
